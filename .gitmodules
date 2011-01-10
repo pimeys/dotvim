@@ -10,3 +10,6 @@
 [submodule "bundle/apidock"]
 	path = bundle/apidock
 	url = https://github.com/mileszs/apidock.vim.git
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
