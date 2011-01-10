@@ -7,3 +7,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/apidock"]
+	path = bundle/apidock
+	url = https://github.com/mileszs/apidock.vim.git
