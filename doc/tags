@@ -18,6 +18,11 @@ ConqueTerm_ToggleKey	conque_term.txt	/*ConqueTerm_ToggleKey*
 MatchError	matchit.txt	/*MatchError*
 [%	matchit.txt	/*[%*
 ]%	matchit.txt	/*]%*
+apidock	apidock.txt	/*apidock*
+apidock-author	apidock.txt	/*apidock-author*
+apidock-customization	apidock.txt	/*apidock-customization*
+apidock-usage	apidock.txt	/*apidock-usage*
+apidock.txt	apidock.txt	/*apidock.txt*
 asa	dbext.txt	/*asa*
 ase	dbext.txt	/*ase*
 b:match_col	matchit.txt	/*b:match_col*

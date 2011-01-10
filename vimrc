@@ -34,6 +34,8 @@ autocmd!
 language C
 syn on
 set softtabstop=2
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 " Use "Wombat" color scheme. / Julius
 colorscheme wombat
