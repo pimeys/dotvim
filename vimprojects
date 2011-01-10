@@ -1,0 +1,273 @@
+
+rssflash="/home/judebrui/Documents/code/rssflash" CD=. filter="*" {
+ README
+ Rakefile
+ app=app {
+  controllers=controllers filter="**" {
+   application_controller.rb
+   rsstext_controller.rb
+  }
+  helpers=helpers filter="**" {
+   application_helper.rb
+   rsstext_helper.rb
+  }
+  models=models filter="**" {
+  }
+  views=views filter="**" {
+  }
+ }
+ config=config {
+  boot.rb
+  database.yml
+  environment.rb
+  routes.rb
+  environments=environments {
+   development.rb
+   production.rb
+   test.rb
+  }
+ }
+ db=db {
+  seeds.rb
+ }
+ lib=lib filter="* */**/*.rb " {
+  tasks=tasks filter="**/*.rake" {
+  }
+ }
+ public=public {
+  404.html
+  422.html
+  500.html
+  favicon.ico
+  index.html
+  robots.txt
+  images=images {
+   rails.png
+  }
+  javascripts=javascripts {
+   application.js
+   controls.js
+   dragdrop.js
+   effects.js
+   prototype.js
+  }
+  stylesheets=stylesheets {
+  }
+ }
+ test=test {
+  test_helper.rb
+  fixtures=fixtures filter="**" {
+  }
+  functional=functional filter="**" {
+   rsstext_controller_test.rb
+  }
+  integration=integration filter="**" {
+  }
+  mocks=mocks filter="**" {
+  }
+  unit=unit filter="**" {
+   helpers/rsstext_helper_test.rb
+  }
+ }
+}
+
+OurPlaces="/home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces" CD=. filter="*" {
+ API_VERSION
+ Capfile
+ README
+ Rakefile
+ app=app {
+  controllers=controllers filter="**" {
+   activities_controller.rb
+   application_controller.rb
+   auth_controller.rb
+   comments_controller.rb
+   friends_controller.rb
+   locations_controller.rb
+   lost_infos_controller.rb
+   profiles_controller.rb
+   visits_controller.rb
+  }
+  helpers=helpers filter="**" {
+   activities_helper.rb
+   application_helper.rb
+  }
+  models=models filter="**" {
+   activity_log.rb
+   activity_type.rb
+   api_key.rb
+   emailer.rb
+   friendship.rb
+   location.rb
+   location_category.rb
+   lost_info.rb
+   medal.rb
+   medal_type.rb
+   person.rb
+   user.rb
+   variable.rb
+   visit.rb
+  }
+  views=views filter="**" {
+   activities/activities.rjson
+   activities/index.rjson
+   comments/index.rjson
+   friends/fb_index.rjson
+   friends/index.rjson
+   locations/index.rjson
+   locations/show.rhtml
+   locations/show.rjson
+   profiles/search.rjson
+   profiles/show.rjson
+   visits/location_visitors.rjson
+   visits/visited_locations.rjson
+  }
+ }
+ config=config {
+  apple_push_notification_development.pem
+  apple_push_notification_production.pem
+  boot.rb
+  database.yml
+  deploy.rb
+  environment.rb
+  routes.rb
+  environments=environments {
+   development.rb
+   production.rb
+   staging.rb
+   test.rb
+  }
+ }
+ db=db {
+  migrate=migrate {
+   20100428121512_create_users.rb
+   20100429111645_create_sessions.rb
+   20100429145459_create_people.rb
+   20100430110010_create_locations.rb
+   20100504061001_add_activity_points_to_people.rb
+   20100504084013_add_image_to_people.rb
+   20100505122326_create_visits.rb
+   20100506060800_create_variables.rb
+   20100507085143_add_fb_fields.rb
+   20100511082421_create_friendships.rb
+   20100511125742_add_photo_to_people.rb
+   20100517064613_create_activities.rb
+   20100519121100_acts_as_taggable_migration.rb
+   20100520113357_create_medals.rb
+   20100531113151_create_lost_infos.rb
+   20100601135530_create_api_keys.rb
+   20100608063459_create_comments.rb
+   20100610071848_add_locale_to_user.rb
+   20100611092935_create_apn_devices.rb
+   20100611092936_create_apn_notifications.rb
+   20100611092937_alter_apn_devices.rb
+   20100614130940_add_spatial_column_to_location.rb
+  }
+ }
+ lib=lib filter="* */**/*.rb " {
+  api_helper.rb
+  authenticated_system.rb
+  facebook.rb
+  tasks=tasks filter="**/*.rake" {
+   convert.rake
+   convert_location_data.rake
+   post_migration.rake
+  }
+ }
+ public=public {
+  404.html
+  422.html
+  500.html
+  favicon.ico
+  index.html
+  robots.txt
+  images=images {
+   architecture.png
+   arts.png
+   bg_body.jpg
+   bg_map-info.png
+   bg_place-info.png
+   bg_visitor-info.png
+   education.png
+   entertainment.png
+   event.png
+   food.png
+   img_logo.png
+   logo.png
+   nightlife.png
+   no_photo.png
+   office.png
+   parks.png
+   rails.png
+   services.png
+   shopping.png
+   sport.png
+   travel.png
+  }
+  javascripts=javascripts {
+   application.js
+   controls.js
+   dragdrop.js
+   effects.js
+   prototype.js
+  }
+  stylesheets=stylesheets {
+   common.css
+   elements.css
+   elements_ie.css
+   reset.css
+  }
+ }
+ test=test {
+  test_helper.rb
+  fixtures=fixtures filter="**" {
+   activity_log.yml
+   activity_types.yml
+   api_keys.yml
+   comments.yml
+   files/1x1.png
+   files/corrupted.png
+   friendships.yml
+   location_categories.yml
+   locations.yml
+   lost_infos.yml
+   medal_types.yml
+   medals.yml
+   people.yml
+   taggings.yml
+   tags.yml
+   users.yml
+   variables.yml
+   visits.yml
+  }
+  functional=functional filter="**" {
+   activities_controller_test.rb
+   auth_controller_test.rb
+   comments_controller_test.rb
+   friends_controller_test.rb
+   locations_controller_test.rb
+   lost_infos_controller_test.rb
+   profiles_controller_test.rb
+   visits_controller_test.rb
+  }
+  integration=integration filter="**" {
+  }
+  mocks=mocks filter="**" {
+  }
+  unit=unit filter="**" {
+   activity_log_test.rb
+   activity_type_test.rb
+   friendship_test.rb
+   helpers/activities_helper_test.rb
+   location_category_test.rb
+   location_test.rb
+   lost_info_test.rb
+   medal_test.rb
+   medal_type_test.rb
+   person_test.rb
+   user_test.rb
+   variable_test.rb
+   visit_test.rb
+  }
+ }
+}

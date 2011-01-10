@@ -1,0 +1,28 @@
+2010/11/30 14:15:05 Start debugger
+2010/11/30 14:15:09 Set breakpoint to: /home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces/app/controllers/web/activities_controller.rb:5
+2010/11/30 14:15:24 Toggling window with name: variables
+2010/11/30 14:15:24 Opened window with name: variables
+2010/11/30 14:15:24 Start displaying data in window with name: variables
+2010/11/30 14:15:24 Set focus to window with name: variables
+2010/11/30 14:15:24 Inserted data to window with name: variables
+2010/11/30 14:15:24 Restored view of window with name: variables
+2010/11/30 14:15:24 Complete displaying data in window with name: variables
+2010/11/30 14:15:24 Opened variables window
+2010/11/30 14:17:29 Killed server with pid: 16764
+2010/11/30 14:17:29 Killed server with pid: 16767
+2010/11/30 14:19:01 Start debugger
+2010/11/30 14:19:06 Set breakpoint to: /home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces/app/controllers/web/locations_controller.rb:55
+2010/11/30 14:19:53 Step into
+2010/11/30 14:19:56 Step into
+2010/11/30 14:19:58 Step into
+2010/11/30 14:20:00 Step into
+2010/11/30 14:20:02 Toggling window with name: variables
+2010/11/30 14:20:02 Opened window with name: variables
+2010/11/30 14:20:02 Start displaying data in window with name: variables
+2010/11/30 14:20:02 Set focus to window with name: variables
+2010/11/30 14:20:02 Inserted data to window with name: variables
+2010/11/30 14:20:02 Restored view of window with name: variables
+2010/11/30 14:20:02 Complete displaying data in window with name: variables
+2010/11/30 14:20:02 Opened variables window
+2010/11/30 14:20:12 Killed server with pid: 16892
+2010/11/30 14:20:12 Killed server with pid: 16895

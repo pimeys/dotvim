@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces/db/populate'
+let g:netrw_dirhist_2='/home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces/db/populate/staging'
+let g:netrw_dirhist_3='/home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces'
+let g:netrw_dirhist_4='/home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces/app'
+let g:netrw_dirhist_5='/home/judebrui/Documents/code/rails/ourplaces/Source/Server/OurPlaces'
