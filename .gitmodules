@@ -22,3 +22,9 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "zencoding-vim"]
+	path = zencoding-vim
+	url = http://github.com/mattn/zencoding-vim.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = http://github.com/mattn/zencoding-vim.git
