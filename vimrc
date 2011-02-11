@@ -34,6 +34,7 @@ autocmd!
 language C
 syn on
 set softtabstop=2
+set statusline=%{fugitive#statusline()}
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 runtime macros/matchit.vim
