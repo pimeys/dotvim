@@ -1,7 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/judebrui/Documents/code/rails/flowd'
 let g:netrw_dirhist_2='/home/judebrui/Documents/code/rails/flowd/app/views/web/status_messages'
 let g:netrw_dirhist_3='/home/judebrui/Documents/code/rails/flowd/app/views/web'
 let g:netrw_dirhist_4='/home/judebrui/Documents/code/rails/flowd/app/views/web/activities'
 let g:netrw_dirhist_5='/home/judebrui/Documents/code/rails/flowd'
+let g:netrw_dirhist_6='/Users/pimeys/Documents/code/rails/aaltoapps'
+let g:netrw_dirhist_7='/Users/pimeys/Documents/code/rails/aaltoapps/app'
+let g:netrw_dirhist_8='/Users/pimeys/Documents/code/rails/aaltoapps/app/controllers'
