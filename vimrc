@@ -40,7 +40,7 @@ call pathogen#helptags()
 runtime macros/matchit.vim
 
 " Use "Wombat" color scheme. / Julius
-colorscheme wombat256mod
+colorscheme fruity
 
 " * Terminal Settings
 
