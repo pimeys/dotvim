@@ -1,15 +1,18 @@
-set transparency=2
-set tabstop=2
-set guioptions=aAce
-set number
+language C
+syn on
+set softtabstop=2
 set statusline=%{fugitive#statusline()}
 set textwidth=0
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 runtime macros/matchit.vim
 
+set transparency=2
+set guioptions=aAce
+set number
+
 filetype on
 filetype plugin on
 filetype indent on
 
-color wombat
+color fruity
