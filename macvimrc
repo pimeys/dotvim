@@ -3,6 +3,7 @@ set tabstop=2
 set guioptions=aAce
 set number
 set statusline=%{fugitive#statusline()}
+set textwidth=0
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 runtime macros/matchit.vim

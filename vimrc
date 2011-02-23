@@ -128,7 +128,7 @@ set autoindent
 " normally don't automatically format `text' as it is typed, IE only do this
 " with comments, at 79 characters:
 set formatoptions-=t
-set textwidth=79
+set textwidth=0
 
 " get rid of the default style of C comments, and define a style with two stars
 " at the start of `middle' rows which (looks nicer and) avoids asterisks used

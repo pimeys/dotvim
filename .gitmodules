@@ -37,3 +37,9 @@
 [submodule "bundle/cmdt"]
 	path = bundle/cmdt
 	url = https://github.com/wincent/Command-T.git
+[submodule "vim-javascript"]
+	path = vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundles/javascript"]
+	path = bundles/javascript
+	url = https://github.com/pangloss/vim-javascript.git
