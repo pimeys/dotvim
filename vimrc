@@ -34,13 +34,26 @@ autocmd!
 language C
 syn on
 set softtabstop=2
-set statusline=%{fugitive#statusline()}
+set statusline=\ "
+set statusline+=*%-25.80f%*\ " file name minimum 25, maxiumum 80 (right justified)
+set statusline+=*
+set statusline+=%h "help file flag
+set statusline+=%r "read only flag
+set statusline+=%m "modified flag
+set statusline+=%w "preview flag
+set statusline+=%*\ "
+set statusline+=*[
+set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
+set statusline+=]%*\ "
+set statusline+=*%{fugitive#statusline()}%*\ " Fugitive
+set statusline+=%= " right align
+set statusline+=*%-14.(%l,%c%V%)\ %<%P%* " offset
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 runtime macros/matchit.vim
 
 " Use "Wombat" color scheme. / Julius
-colorscheme fruity
+colorscheme vibrantink
 
 " * Terminal Settings
 
