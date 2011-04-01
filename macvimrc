@@ -10,8 +10,8 @@ set transparency=2
 set guioptions=aAce
 set number
 
-filetype on
-filetype plugin on
-filetype indent on
+syntax on
+filetype off
+filetype plugin indent on
 
 color fruity
