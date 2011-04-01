@@ -18,7 +18,7 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/vim-ruby-debugger"]
 	path = bundle/vim-ruby-debugger
-	url = https://github.com/astashov/vim-ruby-debugger.git
+	url = https://github.com/mirlord/vim-ruby-debugger.git
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
@@ -54,4 +54,7 @@
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/ruby-debugger"]
 	path = bundle/ruby-debugger
-	url = https://github.com/astashov/vim-ruby-debugger.git
+	url = https://github.com/mirlord/vim-ruby-debugger.git
+[submodule "bundle/vim-web-indent"]
+	path = bundle/vim-web-indent
+	url = https://github.com/garbas/vim-web-indent

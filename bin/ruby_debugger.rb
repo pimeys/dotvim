@@ -130,7 +130,7 @@ end
 
 
 VimRubyDebugger.new(
-  :host => localhost,
+  :host => ARGV[0],
   :rdebug_port => ARGV[1],
   :vim_ruby_debugger_port => ARGV[2],
   :vim_executable => ARGV[3],

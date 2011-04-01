@@ -353,7 +353,6 @@ ruby-debugger-introduction	ruby_debugger.txt	/*ruby-debugger-introduction*
 ruby-debugger-issues	ruby_debugger.txt	/*ruby-debugger-issues*
 ruby-debugger-plugin-author	ruby_debugger.txt	/*ruby-debugger-plugin-author*
 ruby-debugger-quickstart	ruby_debugger.txt	/*ruby-debugger-quickstart*
-ruby-debugger-ruby19	ruby_debugger.txt	/*ruby-debugger-ruby19*
 ruby-debugger-tests	ruby_debugger.txt	/*ruby-debugger-tests*
 ruby_debugger.txt	ruby_debugger.txt	/*ruby_debugger.txt*
 sqlite	dbext.txt	/*sqlite*
