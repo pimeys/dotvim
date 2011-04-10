@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/pimeys/Documents/code/clojure/viikko/src'
-let g:netrw_dirhist_2='/Users/pimeys/Documents/code/clojure/viikko/src/viikko'
-let g:netrw_dirhist_3='/Users/pimeys/Documents/code/haskell/viikko'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/pimeys/Documents/code/clojure/nakkikone/src/nakkikone/controllers'
+let g:netrw_dirhist_2='/Users/pimeys/Documents/code/clojure/nakkikone/src/nakkikone'
+let g:netrw_dirhist_3='/Users/pimeys/Documents/code/clojure/nakkikone'
+let g:netrw_dirhist_4='/Users/pimeys/Documents/code/clojure/nakkikone/src'
+let g:netrw_dirhist_5='/Users/pimeys/Documents/code/clojure/nakkikone/src/nakkikone'
+let g:netrw_dirhist_6='/Users/pimeys/Documents/code/clojure/nakkikone/src/nakkikone/controllers'
+let g:netrw_dirhist_7='/Users/pimeys/Documents/code/clojure/nakkikone/src/nakkikone'
+let g:netrw_dirhist_8='/Users/pimeys/Documents/code/clojure/nakkikone/src/nakkikone/models'

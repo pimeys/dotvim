@@ -14,4 +14,4 @@ syntax on
 filetype off
 filetype plugin indent on
 
-color fruity
+color solarized
