@@ -34,7 +34,7 @@ autocmd!
 language C
 syn on
 set softtabstop=2
-set statusline=\ "
+set statusline=%c_back\ "
 set statusline+=*%-25.80f%*\ " file name minimum 25, maxiumum 80 (right justified)
 set statusline+=*
 set statusline+=%h "help file flag
@@ -53,7 +53,8 @@ call pathogen#helptags()
 runtime macros/matchit.vim
 
 " Use "Wombat" color scheme. / Julius
-colorscheme vibrantink
+colorscheme solarized
+
 
 " * Terminal Settings
 
@@ -781,3 +782,5 @@ endfunction " RepeatTag()
 
 
 " end of Smylers's .vimrc
+
+set nonumber

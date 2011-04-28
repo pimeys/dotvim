@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/judebrui/Documents/code/rails/proximity/src/Nimbus/app/views'
+let g:netrw_dirhist_1='/home/judebrui/Documents/code/rails/proximity/src/Nimbus'
 let g:netrw_dirhist_2='/home/judebrui/Documents/code/rails/proximity/src/Nimbus/app/views/tasks'
-let g:netrw_dirhist_3='/home/judebrui/Documents/code/rails/proximity/src/Nimbus'
+let g:netrw_dirhist_3='/home/judebrui/Documents/code/rails/proximity/src/Nimbus/log'

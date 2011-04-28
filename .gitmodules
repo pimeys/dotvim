@@ -58,3 +58,6 @@
 [submodule "bundle/vim-web-indent"]
 	path = bundle/vim-web-indent
 	url = https://github.com/garbas/vim-web-indent
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
