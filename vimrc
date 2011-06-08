@@ -796,17 +796,17 @@ noremap <silent> <leader>gc :Gcommit<cr>
 noremap <silent> <leader>gb :Gblame<cr>
 noremap <silent> <leader>gp :Git push origin master<cr>
 
-noremap <silent> <leader>rc :Rcontroller 
-noremap <silent> <leader>rm :Rmodel 
-noremap <silent> <leader>rv :Rview 
-noremap <silent> <leader>rj :Rjavascript 
-noremap <silent> <leader>rs :Rstylesheet 
-noremap <silent> <leader>rmi :Rmigration 
-noremap <silent> <leader>rgs :Rgenerate scaffold 
-noremap <silent> <leader>rgc :Rgenerate controller 
-noremap <silent> <leader>rgm :Rgenerate model 
-noremap <silent> <leader>rgv :Rgenerate view 
-noremap <silent> <leader>rgmi :Rgenerate migration 
+noremap <silent> <leader>rc :Rcontroller
+noremap <silent> <leader>rm :Rmodel
+noremap <silent> <leader>rv :Rview
+noremap <silent> <leader>rj :Rjavascript
+noremap <silent> <leader>rs :Rstylesheet
+noremap <silent> <leader>rmi :Rmigration
+noremap <silent> <leader>rgs :Rgenerate scaffold
+noremap <silent> <leader>rgc :Rgenerate controller
+noremap <silent> <leader>rgm :Rgenerate model
+noremap <silent> <leader>rgv :Rgenerate view
+noremap <silent> <leader>rgmi :Rgenerate migration
 
-noremap <silent> <leader>vs vsplit 
-noremap <silent> <leader>a :Ack! 
+noremap <silent> <leader>vs vsplit
+noremap <silent> <leader>a :Ack!
