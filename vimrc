@@ -799,8 +799,8 @@ noremap <silent> <leader>gp :Git push origin master<cr>
 noremap <silent> <leader>rc :Rcontroller 
 noremap <silent> <leader>rm :Rmodel 
 noremap <silent> <leader>rv :Rview 
-noremap <silent> <leader>rv :Rjavascript 
-noremap <silent> <leader>rv :Rstylesheet 
+noremap <silent> <leader>rj :Rjavascript 
+noremap <silent> <leader>rs :Rstylesheet 
 noremap <silent> <leader>rmi :Rmigration 
 noremap <silent> <leader>rgs :Rgenerate scaffold 
 noremap <silent> <leader>rgc :Rgenerate controller 
