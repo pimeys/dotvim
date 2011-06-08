@@ -808,5 +808,5 @@ noremap <silent> <leader>rgm :Rgenerate model
 noremap <silent> <leader>rgv :Rgenerate view 
 noremap <silent> <leader>rgmi :Rgenerate migration 
 
-noremap <silent> <leader>vs 
+noremap <silent> <leader>vs vsplit 
 noremap <silent> <leader>a :Ack! 
