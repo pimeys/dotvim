@@ -30,7 +30,8 @@
 " first clear any existing autocommands:
 autocmd!
 
-" Juliuksen lisäykset
+let mapleader=","
+
 language C
 syn on
 set softtabstop=2
@@ -54,7 +55,6 @@ runtime macros/matchit.vim
 
 " Use "Wombat" color scheme. / Julius
 colorscheme solarized
-
 
 " * Terminal Settings
 
@@ -119,6 +119,8 @@ set showcmd
 
 " when using list, keep tabs at their full width and display `arrows':
 execute 'set listchars+=tab:' . nr2char(187) . nr2char(183)
+
+set list
 " (Character 187 is a right double-chevron, and 183 a mid-dot.)
 
 " have the mouse enabled all the time:
@@ -783,4 +785,24 @@ endfunction " RepeatTag()
 
 " end of Smylers's .vimrc
 
-set nonumber
+set number
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+" keybinds for fugitive
+noremap <silent> <leader>gs :Gstatus<cr>
+noremap <silent> <leader>gd :Gdiff<cr>
+noremap <silent> <leader>gl :Glog<cr>:botright cwindow<CR>
+noremap <silent> <leader>gc :Gcommit<cr>
+noremap <silent> <leader>gb :Gblame<cr>
+
+noremap <silent> <leader>rc :Rcontroller 
+noremap <silent> <leader>rm :Rmodel 
+noremap <silent> <leader>rv :Rview 
+noremap <silent> <leader>rmi :Rmigration 
+noremap <silent> <leader>rgs :Rgenerate scaffold 
+noremap <silent> <leader>rgc :Rgenerate controller 
+noremap <silent> <leader>rgm :Rgenerate model 
+noremap <silent> <leader>rgv :Rgenerate view 
+noremap <silent> <leader>rgmi :Rgenerate migration 
+
+noremap <silent> <leader>a :Ack! 
