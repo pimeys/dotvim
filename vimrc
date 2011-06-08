@@ -794,7 +794,8 @@ noremap <silent> <leader>gd :Gdiff<cr>
 noremap <silent> <leader>gl :Glog<cr>:botright cwindow<CR>
 noremap <silent> <leader>gc :Gcommit<cr>
 noremap <silent> <leader>gb :Gblame<cr>
-noremap <silent> <leader>gp :Git push origin master<cr>
+noremap <silent> <leader>gps :Git push origin master<cr>
+noremap <silent> <leader>gpl :Git pull origin master<cr>
 
 noremap <silent> <leader>rc :Rcontroller
 noremap <silent> <leader>rm :Rmodel
