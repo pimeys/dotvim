@@ -73,3 +73,9 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = https://github.com/tpope/vim-rails
+[submodule "Rainbow-Parenthesis"]
+	path = Rainbow-Parenthesis
+	url = https://github.com/vim-scripts/Rainbow-Parenthesis.git
+[submodule "bundle/rainbow-parenthesis"]
+	path = bundle/rainbow-parenthesis
+	url = https://github.com/vim-scripts/Rainbow-Parenthesis.git
