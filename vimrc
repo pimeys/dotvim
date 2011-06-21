@@ -84,6 +84,8 @@ noremap <leader>q gqip
 nnoremap <leader>v V`]
 nnoremap <silent> <F3> :YRShow<cr>
 inoremap <silent> <F3> <ESC>:YRShow<cr>
+nnoremap <silent> <F5> :GundoToggle<cr>
+nnoremap <silent> <F5> <ESC>:GundoToggle<cr>
 
 noremap <silent> <leader>gs :Gstatus<cr>
 noremap <silent> <leader>gd :Gdiff<cr>
