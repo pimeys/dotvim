@@ -113,6 +113,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+noremap + $
+vnoremap + $
+onoremap + $
+
 noremap <silent> <leader>csd :! cap staging deploy<cr>
 noremap <silent> <leader>csr :! cap staging rollback<cr>
 noremap <silent> <leader>cpd :! cap production deploy<cr>
