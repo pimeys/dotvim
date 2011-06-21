@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/judebrui/Documents/code/rails/proximity'
 let g:netrw_dirhist_2='/home/judebrui/Documents/code/rails/proximity/spec/factories'
 let g:netrw_dirhist_3='/home/judebrui/Documents/code/rails/proximity'
 let g:netrw_dirhist_4='/home/judebrui/Documents/code/rails/proximity/app'
 let g:netrw_dirhist_5='/home/judebrui/Documents/code/rails/proximity/app/controllers'
 let g:netrw_dirhist_6='/home/judebrui/Documents/code/rails/proximity'
+let g:netrw_dirhist_7='/home/judebrui/.vim'
