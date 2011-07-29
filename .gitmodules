@@ -85,3 +85,6 @@
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "bundle/lodgeit"]
+	path = bundle/lodgeit
+	url = https://github.com/vim-scripts/lodgeit.vim.git
