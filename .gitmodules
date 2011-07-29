@@ -88,3 +88,6 @@
 [submodule "bundle/lodgeit"]
 	path = bundle/lodgeit
 	url = https://github.com/vim-scripts/lodgeit.vim.git
+[submodule "bundle/paster"]
+	path = bundle/paster
+	url = https://github.com/weierophinney/paster.vim.git
