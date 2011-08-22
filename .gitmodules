@@ -91,3 +91,6 @@
 [submodule "bundle/paster"]
 	path = bundle/paster
 	url = https://github.com/weierophinney/paster.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
