@@ -33,7 +33,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
 set undofile
 set wrap
 set textwidth=79
@@ -76,17 +75,16 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
-nnoremap ; :
 noremap <leader>q gqip
 nnoremap <leader>v V`]
 nnoremap <silent> <F3> :YRShow<cr>
 inoremap <silent> <F3> <ESC>:YRShow<cr>
 nnoremap <silent> <F5> :GundoToggle<cr>
 nnoremap <silent> <F5> <ESC>:GundoToggle<cr>
+nnoremap <F1> :set relativenumber<cr>
+nnoremap <F2> :set number<cr>
 
+" keybinds for fugitive
 noremap <silent> <leader>gs :Gstatus<cr>
 noremap <silent> <leader>gd :Gdiff<cr>
 noremap <silent> <leader>gl :Glog<cr>:botright cwindow<CR>
@@ -126,4 +124,3 @@ noremap <silent> <leader>vs vsplit
 noremap <silent> <leader>a :Ack!
 
 
-" keybinds for fugitive
