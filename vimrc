@@ -9,6 +9,8 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype plugin indent on
+set ofu=syntaxcomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
 
 " Tab settings
 set tabstop=2
