@@ -60,7 +60,7 @@ set incsearch
 set showmatch
 set hlsearch
 
-set number
+set relativenumber
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Key remaps
