@@ -60,7 +60,7 @@ set incsearch
 set showmatch
 set hlsearch
 
-set relativenumber
+set number
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Key remaps
@@ -130,5 +130,4 @@ noremap <silent> <leader>cpr :! cap production rollback<cr>
 
 noremap <silent> <leader>vs vsplit
 noremap <silent> <leader>a :Ack!
-
 

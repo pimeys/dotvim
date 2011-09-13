@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/pimeys/Documents/code/rails/nakkikone'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/pimeys/Documents/code/ofw'
+let g:netrw_dirhist_2='/home/pimeys/Documents/code/ofw/lib/tasks'
+let g:netrw_dirhist_3='/home/pimeys/Documents/code/ofw'
