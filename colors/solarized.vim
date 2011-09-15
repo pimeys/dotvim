@@ -268,13 +268,8 @@ endif
 "}}}
 " Colorscheme basic settings"{{{
 " ---------------------------------------------------------------------
-if g:solarized_style == "dark"
-    set background=dark
-elseif g:solarized_style == "light"
-    set background=light
-else
-    let g:solarized_style = &background
-endif
+set background=dark
+let g:solarized_style = &background
 
 hi clear
 if exists("syntax_on")

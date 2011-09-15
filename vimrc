@@ -48,7 +48,8 @@ set formatoptions=qrn1
 set colorcolumn=85
 set list
 
-syntax on
+syntax enable
+set background=dark
 
 " Search settings
 nnoremap / /\v
@@ -60,7 +61,7 @@ set incsearch
 set showmatch
 set hlsearch
 
-set number
+set relativenumber
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Key remaps
