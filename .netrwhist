@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/pimeys/code/ofw'
-let g:netrw_dirhist_2='/home/pimeys/code/sws'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/pimeys/code/ruby/ams/spec/controllers/support'
+let g:netrw_dirhist_2='/home/pimeys/code/ruby/ams/spec/controllers'
+let g:netrw_dirhist_3='/home/pimeys/code/ruby/ams/spec'
+let g:netrw_dirhist_4='/home/pimeys/code/ruby/ams/spec/models'
+let g:netrw_dirhist_5='/home/pimeys/code/ruby/ams'
+let g:netrw_dirhist_6='/home/pimeys/code/ruby/ams/app/models/affiliate_network'
+let g:netrw_dirhist_7='/home/pimeys/code/ruby/ams'
+let g:netrw_dirhist_8='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_9='/home/pimeys/code/ruby/ams'
