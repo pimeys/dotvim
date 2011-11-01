@@ -36,7 +36,7 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-set cursorline
+set nocursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
