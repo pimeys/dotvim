@@ -46,10 +46,14 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
-set list
+set nolist
 
 syntax enable
 set background=dark
+
+" GUI options
+set guioptions=
+set guifont=Inconsolata\ 12
 
 " Search settings
 nnoremap / /\v
@@ -61,7 +65,7 @@ set incsearch
 set showmatch
 set hlsearch
 
-set relativenumber
+set number
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Key remaps
@@ -113,6 +117,10 @@ noremap <silent> <leader>rgc :Rgenerate controller
 noremap <silent> <leader>rgm :Rgenerate model
 noremap <silent> <leader>rgv :Rgenerate view
 noremap <silent> <leader>rgmi :Rgenerate migration
+
+"buffer navigation
+noremap <M-S-TAB> :bprevious<cr>
+noremap <M-TAB> :bnext<cr>
 
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <C-h> <C-w>h
