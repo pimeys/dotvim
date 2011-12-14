@@ -109,3 +109,6 @@
 [submodule "bundle/vim-racket"]
 	path = bundle/vim-racket
 	url = https://github.com/wlangstroth/vim-racket.git
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = https://github.com/markabe/bufexplorer.git
