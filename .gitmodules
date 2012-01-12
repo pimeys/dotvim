@@ -109,3 +109,6 @@
 [submodule "bundle/vim-racket"]
 	path = bundle/vim-racket
 	url = https://github.com/wlangstroth/vim-racket.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
