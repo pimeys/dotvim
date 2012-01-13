@@ -41,6 +41,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+set t_Co=256
 set undofile
 set wrap
 set textwidth=79
