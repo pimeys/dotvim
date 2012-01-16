@@ -1,13 +1,48 @@
+set nocompatible
+
 " Colors
 colorscheme solarized
 
 " The best leader: ,
 let mapleader=","
 
-" Pathogen init
+" Vundle init
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Bundles
+Bundle 'gmarik/vundle'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'msanders/snipmate.vim'
+Bundle 'mileszs/apidock.vim'
+Bundle 'tpope/vim-repeat'
+Bundle 'mirlord/vim-ruby-debugger'
+Bundle 'tpope/vim-surround'
+Bundle 'mattn/zencoding-vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'jamis/fuzzyfinder_textmate'
+Bundle 'wincent/Command-T'
+Bundle 'pangloss/vim-javascript'
+Bundle 'tpope/vim-rails'
+Bundle 'mineiro/vim-latex'
+Bundle 'int3/vim-extradite'
+Bundle 'mileszs/ack.vim'
+Bundle 'garbas/vim-web-indent'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/VimClojure'
+Bundle 'vim-scripts/Rainbow-Parenthesis'
+Bundle 'sjl/gundo.vim'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'vim-scripts/lodgeit.vim'
+Bundle 'weierophinney/paster.vim'
+Bundle 'ervandew/supertab'
+Bundle 'Raimondi/delimitMate'
+Bundle 'docunext/closetag.vim'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'markabe/bufexplorer'
+Bundle 'Lokaltog/vim-powerline'
 
 " Plugin indent
 filetype plugin indent on
@@ -25,7 +60,6 @@ set softtabstop=2
 set expandtab
 
 " Misc
-set nocompatible
 set modelines=0
 set encoding=utf-8
 set scrolloff=3
@@ -54,7 +88,8 @@ set background=dark
 
 " GUI options
 set guioptions=
-set guifont=Inconsolata\ 12
+set guifont=Inconsolata\ 13
+let g:Powerline_symbols = 'fancy'
 
 " Search settings
 nnoremap / /\v
