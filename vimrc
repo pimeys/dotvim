@@ -43,6 +43,7 @@ Bundle 'docunext/closetag.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'markabe/bufexplorer'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'racket.vim'
 
 " Plugin indent
 filetype plugin indent on
