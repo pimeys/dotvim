@@ -89,8 +89,9 @@ set background=dark
 
 " GUI options
 set guioptions=
-set guifont=Inconsolata\ 13
-let g:Powerline_symbols = 'fancy'
+set guifont=Inconsolata\ 11
+"let g:Powerline_symbols = 'fancy'
+let g:Powerline_theme = 'solarized'
 
 " Search settings
 nnoremap / /\v
