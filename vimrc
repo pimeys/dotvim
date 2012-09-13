@@ -44,6 +44,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'markabe/bufexplorer'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'racket.vim'
+Bundle 'AndrewRadev/switch.vim'
 
 " Plugin indent
 filetype plugin indent on
@@ -91,7 +92,7 @@ set background=dark
 set guioptions=
 set guifont=Inconsolata\ 11
 "let g:Powerline_symbols = 'fancy'
-let g:Powerline_theme = 'solarized'
+"let g:Powerline_theme = 'solarized'
 
 " Search settings
 nnoremap / /\v
@@ -116,6 +117,8 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 inoremap jj <ESC>
+
+nnoremap - :Switch<cr>
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -155,6 +158,9 @@ noremap <silent> <leader>rgc :Rgenerate controller
 noremap <silent> <leader>rgm :Rgenerate model
 noremap <silent> <leader>rgv :Rgenerate view
 noremap <silent> <leader>rgmi :Rgenerate migration
+
+noremap <leader>j :tabprevious<cr>
+noremap <leader>k :tabnext<cr>
 
 "buffer navigation
 noremap <M-S-TAB> :bprevious<cr>
