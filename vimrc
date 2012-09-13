@@ -47,6 +47,8 @@ Bundle 'Rip-Rip/clang_complete'
 Bundle 'tpope/vim-bundler'
 Bundle 'wlangstroth/vim-racket'
 Bundle 'vim-scripts/Rainbow-Parenthesis'
+Bundle 'racket.vim'
+Bundle 'AndrewRadev/switch.vim'
 
 set shell=/bin/zsh
 
@@ -96,7 +98,7 @@ set background=dark
 set guioptions=
 set guifont=Inconsolata\ 13
 "let g:Powerline_symbols = 'fancy'
-let g:Powerline_theme = 'solarized'
+"let g:Powerline_theme = 'solarized'
 
 " Search settings
 nnoremap / /\v
@@ -153,6 +155,8 @@ inoremap jj <ESC>
 nnoremap <C-i> {
 nnoremap <C-u> }
 
+nnoremap - :Switch<cr>
+
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <right> <nop>
@@ -192,6 +196,9 @@ noremap <silent> <leader>rgc :Rgenerate controller
 noremap <silent> <leader>rgm :Rgenerate model
 noremap <silent> <leader>rgv :Rgenerate view
 noremap <silent> <leader>rgmi :Rgenerate migration
+
+noremap <leader>j :tabprevious<cr>
+noremap <leader>k :tabnext<cr>
 
 "buffer navigation
 noremap <C-p> :bprevious<cr>
