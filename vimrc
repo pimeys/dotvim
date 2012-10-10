@@ -45,6 +45,7 @@ Bundle 'markabe/bufexplorer'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'racket.vim'
 Bundle 'AndrewRadev/switch.vim'
+Bundle 'git://github.com/kien/ctrlp.vim.git'
 
 " Plugin indent
 filetype plugin indent on
