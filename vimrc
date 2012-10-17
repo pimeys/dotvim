@@ -49,6 +49,7 @@ Bundle 'wlangstroth/vim-racket'
 Bundle 'vim-scripts/Rainbow-Parenthesis'
 Bundle 'racket.vim'
 Bundle 'AndrewRadev/switch.vim'
+Bundle 'git://github.com/kien/ctrlp.vim.git'
 
 set shell=/bin/zsh
 
