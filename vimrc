@@ -1,7 +1,12 @@
 set nocompatible
 
 " Colors
-colorscheme solarized
+set background=dark     " Assume a dark background
+let g:solarized_termcolors=256
+color solarized                 " load a colorscheme
+let g:solarized_termtrans=1
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 
 " The best leader: ,
 let mapleader=","
@@ -39,7 +44,6 @@ Bundle 'vim-scripts/lodgeit.vim'
 Bundle 'weierophinney/paster.vim'
 Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
-Bundle 'docunext/closetag.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'markabe/bufexplorer'
 Bundle 'Lokaltog/vim-powerline'
@@ -49,7 +53,8 @@ Bundle 'wlangstroth/vim-racket'
 Bundle 'vim-scripts/Rainbow-Parenthesis'
 Bundle 'racket.vim'
 Bundle 'AndrewRadev/switch.vim'
-Bundle 'git://github.com/kien/ctrlp.vim.git'
+Bundle 'kien/ctrlp.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 set shell=/bin/zsh
 
@@ -58,9 +63,18 @@ filetype plugin indent on
 set ofu=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
-" Closetag config
-autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+" indent guides
+if !exists('g:spf13_no_indent_guides_autocolor')
+  let g:indent_guides_auto_colors = 1
+else
+  " for some colorscheme ,autocolor will not work,like 'desert','ir_black'.
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#212121   ctermbg=3
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#404040 ctermbg=4
+endif
+set ts=4 sw=4 et
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Tab settings
 set tabstop=2
@@ -72,6 +86,7 @@ set expandtab
 set modelines=0
 set encoding=utf-8
 set scrolloff=3
+set cursorline
 set autoindent
 set showmode
 set showcmd
@@ -82,6 +97,8 @@ set visualbell
 set nocursorline
 set ttyfast
 set ruler
+set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
+set showmatch                   " show matching brackets/parenthesis
 set backspace=indent,eol,start
 set laststatus=2
 set t_Co=256
@@ -90,7 +107,11 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
-set nolist
+set list
+set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+set linespace=0
+autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml,ruby autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
 
 syntax enable
 set background=dark
@@ -111,7 +132,7 @@ set incsearch
 set showmatch
 set hlsearch
 
-set number
+set relativenumber
 let g:ackprg="ack -H --nocolor --nogroup --column"
 
 " Clang complete
@@ -136,6 +157,11 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 match ExtraWhitespace /[^\t]\z\s\t\+/
+
+vmap <silent> ,y y:new<CR>:call setline(1,getregtype())<CR>o<Esc>P:wq! ~/reg.txt<CR>
+nmap <silent> ,y :new<CR>:call setline(1,getregtype())<CR>o<Esc>P:wq! ~/reg.txt<CR>
+map <silent> ,p :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>p
+map <silent> ,P :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>P
 
 nnoremap <leader>q :call g:ClangUpdateQuickFix()<CR>
 
@@ -228,3 +254,34 @@ noremap <silent> <leader>a :Ack!
 " buffers
 noremap <leader>bw bprevious
 noremap <leader>br bnext
+
+function! InitializeDirectories()
+    let separator = "."
+    let parent = $HOME
+    let prefix = '.vim'
+    let dir_list = {
+                \ 'backup': 'backupdir',
+                \ 'views': 'viewdir',
+                \ 'swap': 'directory' }
+
+    if has('persistent_undo')
+        let dir_list['undo'] = 'undodir'
+    endif
+
+    for [dirname, settingname] in items(dir_list)
+        let directory = parent . '/' . prefix . dirname . "/"
+        if exists("*mkdir")
+            if !isdirectory(directory)
+                call mkdir(directory)
+            endif
+        endif
+        if !isdirectory(directory)
+            echo "Warning: Unable to create backup directory: " . directory
+            echo "Try: mkdir -p " . directory
+        else
+            let directory = substitute(directory, " ", "\\\\ ", "g")
+            exec "set " . settingname . "=" . directory
+        endif
+    endfor
+endfunction
+call InitializeDirectories()
