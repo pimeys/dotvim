@@ -55,6 +55,7 @@ Bundle 'racket.vim'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'jnwhiteh/vim-golang'
 
 set shell=/bin/zsh
 
