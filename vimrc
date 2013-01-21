@@ -77,6 +77,12 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
+" vim clojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
+let vimclojure#NailgunClient = '/home/pimeys/.bin/ng'
+let vimclojure#WantNailgun = 1
+
 " Tab settings
 set tabstop=2
 set shiftwidth=2
