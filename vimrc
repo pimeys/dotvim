@@ -55,6 +55,7 @@ Bundle 'racket.vim'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'mattn/gist-vim'
 
 set shell=/bin/zsh
 
@@ -249,7 +250,8 @@ noremap <silent> <leader>cpd :! cap production deploy<cr>
 noremap <silent> <leader>cpr :! cap production rollback<cr>
 
 noremap <silent> <leader>vs vsplit
-noremap <silent> <leader>a :Ack!
+noremap <silent> <leader>a yiw:Ack! <C-r>"<cr>
+vnoremap <silent> <leader>a y:Ack! <C-r>"<cr>
 
 " buffers
 noremap <leader>bw bprevious
