@@ -2,7 +2,7 @@ set nocompatible
 
 " Colors
 set background=dark     " Assume a dark background
-let g:solarized_termcolors=256
+let g:solarized_termcolors=16
 color solarized                 " load a colorscheme
 let g:solarized_termtrans=1
 let g:solarized_contrast="high"
@@ -10,7 +10,6 @@ let g:solarized_visibility="high"
 
 " The best leader: ,
 let mapleader=","
-
 " Vundle init
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -56,6 +55,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'mattn/gist-vim'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'airblade/vim-gitgutter'
 
 set shell=/bin/zsh
 
@@ -64,17 +64,13 @@ filetype plugin indent on
 set ofu=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
-" indent guides
-if !exists('g:spf13_no_indent_guides_autocolor')
-  let g:indent_guides_auto_colors = 1
-else
-  " for some colorscheme ,autocolor will not work,like 'desert','ir_black'.
-  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#212121   ctermbg=3
-  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#404040 ctermbg=4
-endif
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#073642   ctermbg=8
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#303030 ctermbg=0
+
 set ts=4 sw=4 et
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 1
+let g:indent_guides_guide_size = 2
 let g:indent_guides_enable_on_vim_startup = 1
 
 " vim clojure
@@ -237,6 +233,7 @@ noremap <leader>k :tabnext<cr>
 "buffer navigation
 noremap <C-p> :bprevious<cr>
 noremap <C-n> :bnext<cr>
+noremap <silent> <leader>bl :BufExplorer<cr>
 
 noremap <C-t> <C-]>
 
@@ -262,6 +259,10 @@ vnoremap <silent> <leader>a y:Ack! <C-r>"<cr>
 " buffers
 noremap <leader>bw bprevious
 noremap <leader>br bnext
+
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
 
 function! InitializeDirectories()
     let separator = "."
