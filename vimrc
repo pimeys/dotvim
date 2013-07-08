@@ -1,6 +1,8 @@
 set nocompatible
 set clipboard=unnamedplus
 
+set clipboard=unnamedplus
+
 " Colors
 set background=dark     " Assume a dark background
 let g:solarized_termcolors=16
@@ -32,7 +34,7 @@ Bundle 'jamis/fuzzyfinder_textmate'
 Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-rails'
 Bundle 'mineiro/vim-latex'
-Bundle 'int3/vim-extradite'
+Bundle 'gregsexton/gitv'
 Bundle 'mileszs/ack.vim'
 Bundle 'garbas/vim-web-indent'
 Bundle 'altercation/vim-colors-solarized'
@@ -213,6 +215,7 @@ noremap <silent> <leader>gd :Gdiff<cr>
 noremap <silent> <leader>gl :Glog<cr>:botright cwindow<CR>
 noremap <silent> <leader>gc :Gcommit<cr>
 noremap <silent> <leader>gb :Gblame<cr>
+noremap <silent> <leader>gv :Gitv<cr>
 noremap <silent> <leader>gps :Git push<cr>
 noremap <silent> <leader>gpl :Git pull<cr>
 
