@@ -1,4 +1,5 @@
 set nocompatible
+set clipboard=unnamedplus
 
 " Colors
 set background=dark     " Assume a dark background
@@ -56,6 +57,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'mattn/gist-vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'terryma/vim-multiple-cursors'
 
 set shell=/bin/zsh
 
@@ -96,7 +98,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
 set nocursorline
 set ttyfast
 set ruler
