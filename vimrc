@@ -5,7 +5,7 @@ set clipboard=unnamedplus
 
 " Colors
 set background=dark     " Assume a dark background
-let g:solarized_termcolors=16
+let g:solarized_termcolors=256
 color solarized                 " load a colorscheme
 let g:solarized_termtrans=1
 let g:solarized_contrast="high"
@@ -24,42 +24,24 @@ set shell=/bin/zsh
 Bundle 'gmarik/vundle'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'msanders/snipmate.vim'
-Bundle 'mileszs/apidock.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
-Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jamis/fuzzyfinder_textmate'
 Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-rails'
 Bundle 'mineiro/vim-latex'
-Bundle 'gregsexton/gitv'
 Bundle 'mileszs/ack.vim'
-Bundle 'garbas/vim-web-indent'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-scripts/VimClojure'
-Bundle 'vim-scripts/Rainbow-Parenthesis'
 Bundle 'sjl/gundo.vim'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'vim-scripts/lodgeit.vim'
-Bundle 'weierophinney/paster.vim'
-Bundle 'ervandew/supertab'
-Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'markabe/bufexplorer'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'Rip-Rip/clang_complete'
-Bundle 'tpope/vim-bundler'
-Bundle 'wlangstroth/vim-racket'
-Bundle 'racket.vim'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'mattn/gist-vim'
-Bundle 'jnwhiteh/vim-golang'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'terryma/vim-multiple-cursors'
+Bundle 'sickill/vim-pasta'
 
 set shell=/bin/zsh
 
@@ -70,12 +52,15 @@ let g:SuperTabDefaultCompletionType = "context"
 
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#073642   ctermbg=8
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#303030 ctermbg=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#002b36 ctermbg=0
 
 set ts=4 sw=4 et
 let g:indent_guides_start_level = 1
 let g:indent_guides_guide_size = 2
 let g:indent_guides_enable_on_vim_startup = 1
+
+" Git Gutter
+let g:gitgutter_eager = 0
 
 " vim clojure
 let g:vimclojure#HighlightBuiltins = 1
@@ -90,7 +75,7 @@ set softtabstop=2
 set expandtab
 
 " Misc
-set modelines=0
+"set modelines=0
 set encoding=utf-8
 set scrolloff=3
 set cursorline
@@ -124,8 +109,8 @@ set background=dark
 
 " GUI options
 set guioptions=
-set guifont=Inconsolata\ 13
-"let g:Powerline_symbols = 'fancy'
+set guifont=Inconsolata\ for\ Powerline\ Medium\ 13
+let g:Powerline_symbols = 'fancy'
 "let g:Powerline_theme = 'solarized'
 
 " Search settings
@@ -138,7 +123,6 @@ set incsearch
 set showmatch
 set hlsearch
 
-set relativenumber
 let g:ackprg="ack -H --nocolor --nogroup --column"
 
 " Clang complete
